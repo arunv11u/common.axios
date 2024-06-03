@@ -1,0 +1,30 @@
+{
+	"name": "common.axios",
+	"version": "1.0.0",
+	"description": "This package contains the wrapper class for axios package.",
+	"main": "src/index.ts",
+	"scripts": {
+		"clean": "rimraf build",
+		"build": "npm run clean && tsc --project tsconfig.build.json",
+		"test": "jest --watchAll --verbose --no-cache --detectOpenHandles --env=node --coverage"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/arunv11u/common.axios.git"
+	},
+	"keywords": [
+		"axios-wrapper"
+	],
+	"author": "Arun Varadharajalu",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/arunv11u/common.axios/issues"
+	},
+	"homepage": "https://github.com/arunv11u/common.axios#readme",
+	"dependencies": {
+		"axios": "^1.7.2"
+	},
+	"devDependencies": {
+		"rimraf": "^5.0.7"
+	}
+}
