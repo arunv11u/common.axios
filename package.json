@@ -1,5 +1,5 @@
 {
-	"name": "common.axios",
+	"name": "@arunvaradharajalu/common.axios",
 	"version": "1.0.0",
 	"description": "This package contains the wrapper class for axios package.",
 	"main": "src/index.ts",
