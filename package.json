@@ -8,6 +8,23 @@
 		"build": "npm run clean && tsc --project tsconfig.build.json",
 		"test": "jest --watchAll --verbose --no-cache --detectOpenHandles --env=node --coverage"
 	},
+	"jest": {
+		"preset": "ts-jest",
+		"testEnvironment": "node",
+		"roots": [
+			"<rootDir>/test"
+		],
+		"clearMocks": true,
+		"reporters": [
+			"default",
+			[
+				"./node_modules/jest-html-reporter",
+				{
+					"pageTitle": "Axios wrapper Test Report"
+				}
+			]
+		]
+	},
 	"repository": {
 		"type": "git",
 		"url": "git+ssh://git@github.com/arunv11u/common.axios.git"
@@ -25,6 +42,9 @@
 		"axios": "^1.7.2"
 	},
 	"devDependencies": {
-		"rimraf": "^5.0.7"
+		"@types/jest": "^29.5.12",
+		"jest-html-reporter": "^3.10.2",
+		"rimraf": "^5.0.7",
+		"ts-jest": "^29.1.4"
 	}
 }
