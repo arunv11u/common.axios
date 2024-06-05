@@ -2,7 +2,7 @@
 	"name": "@arunvaradharajalu/common.axios",
 	"version": "1.1.2",
 	"description": "This package contains the wrapper class for axios package.",
-	"main": "./build/index.ts",
+	"main": "./build/index.js",
 	"types": "./build/index.d.ts",
 	"files": [
 		"build/**/*"
